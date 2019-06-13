@@ -7,8 +7,8 @@ const readText = _ => {
   return writeText(text);
 };
 
-const writeText = text => {
-  const image = text || '';
+const writeText = (text = '') => {
+  const image = text;
   getImageLetterDiv().innerHTML = '';
 
   return image.split('')
